@@ -1,0 +1,273 @@
+<override>
+    <!--Black-Ops Heavy Armor-->
+    <Item name="" identifier="sgt_boarmorhvy" category="Equipment" subcategory="Coalition" cargocontaineridentifier="metalcrate" tags="mediumitem,clothing" scale="0.8" impactsoundtag="impact_metal_heavy">
+    <PreferredContainer primary="abandonedarmseccab,wrecharmseccab" amount="1" spawnprobability="0.05" minleveldifficulty="55" />
+    <PreferredContainer primary="crewcab" />
+    <Price baseprice="1920" displaynonempty="true" minleveldifficulty="60">
+    <Price storeidentifier="merchantoutpost" multiplier="1.25" minamount="0" maxamount="1">
+    <Reputation faction="coalition" min="85" />
+    </Price>
+    <Price storeidentifier="merchantcity" multiplier="1.15" minavailable="0" maxavailable="1">
+    <Reputation faction="coalition" min="85" />
+    </Price>
+    <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
+    <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="2">
+    <Reputation faction="coalition" min="85" />
+    </Price>
+    <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
+    <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="2">
+    <Reputation faction="coalition" min="85" />
+    </Price>
+    </Price>
+    <Deconstruct time="20">
+    <Item identifier="scp_durasteel" />
+    <Item identifier="scp_durasteel" />
+    <Item identifier="titaniumaluminiumalloy" />
+    </Deconstruct>
+    <InventoryIcon name="inv" texture="%ModDir%/Vest/boarmor1.png" sourcerect="447,5,56,63" origin="0.5,0.5" />
+    <Sprite name="sprite" texture="%ModDir%/Vest/boarmor1.png" sourcerect="447,5,56,63" depth="0.6" origin="0.5,0.5" />
+    <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
+    <Wearable slots="OuterClothes" msg="ItemMsgPickUpSelect">
+    <sprite name="Heavy Armor Torso" texture="%ModDir%/Vest/boarmor1.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+    <sprite name="Heavy Armor Right Lower Arm" texture="%ModDir%/Vest/boarmor1.png" limb="RightForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+    <sprite name="Heavy Armor Left Lower Arm" texture="%ModDir%/Vest/boarmor1.png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+    <sprite name="Heavy Armor Right Upper Arm" texture="%ModDir%/Vest/boarmor1.png" limb="RightArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+    <sprite name="Heavy Armor Left Upper Arm" texture="%ModDir%/Vest/boarmor1.png" limb="LeftArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+    <StatusEffect type="OnWearing" target="Character" HideFace="false" ObstructVision="false" SpeedMultiplier="0.9" setvalue="true" disabledeltatime="true"></StatusEffect>
+    <SkillModifier skillidentifier="weapons" skillvalue="10" />
+    <damagemodifier armorsector="25,110" afflictionidentifiers="bleeding,gunshotwound,lacerations,explosiondamage" damagemultiplier="0.10" />
+    <damagemodifier armorsector="25,110" afflictionidentifiers="blunttrauma" damagemultiplier="0.25" />
+    <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="stun" damagemultiplier="0.85" />
+    <damagemodifier armorsector="25,110" afflictionidentifiers="bitewounds" damagemultiplier="0.85" />
+    <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.90" />
+    <Requireditem items="sgt_combatrig" type="Contained" slot="InnerClothing" />
+    </Wearable>
+    <ItemContainer capacity="2" maxstacksize="4" hideitems="true" containedstateindicatorslot="0" containedspritedepth="0.56">
+    <Containable items="smallitem" excludeditems="clothing,toolbox,mobilecontainer,rucksack,backpack,waistbelt,vest,backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,oxy-gen. backpack,xeno-backpack,techno-backpack" />
+    </ItemContainer>
+    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="0,0" holdangle="90" handle1="-10,10" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" />
+    </Item>
+    <!--Black-Ops Hazard-Ops Panels-->
+    <Item name="" identifier="sgt_boarmorhaz" category="Equipment" subcategory="Coalition" cargocontaineridentifier="metalcrate" tags="mediumitem,clothing" scale="0.8" impactsoundtag="impact_metal_heavy">
+    <PreferredContainer primary="abandonedarmseccab,wrecharmseccab" amount="1" spawnprobability="0.05" minleveldifficulty="45" />
+    <Price baseprice="1600" displaynonempty="true" minleveldifficulty="60">
+    <Price storeidentifier="merchantoutpost" multiplier="1.25" minamount="0" maxamount="1">
+    <Reputation faction="coalition" min="85" />
+    </Price>
+    <Price storeidentifier="merchantcity" multiplier="1.15" minavailable="0" maxavailable="1">
+    <Reputation faction="coalition" min="85" />
+    </Price>
+    <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
+    <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="2">
+    <Reputation faction="coalition" min="85" />
+    </Price>
+    <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
+    <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="2">
+    <Reputation faction="coalition" min="85" />
+    </Price>
+    </Price>
+    <Deconstruct time="20">
+    <Item identifier="scp_durasteel" />
+    <Item identifier="scp_durasteel" />
+    <Item identifier="titaniumaluminiumalloy" />
+    </Deconstruct>
+    <InventoryIcon name="inv" texture="%ModDir%/Vest/boarmor2.png" sourcerect="429,0,83,84" origin="0.5,0.5" />
+    <Sprite name="sprite" texture="%ModDir%/Vest/boarmor2.png" sourcerect="429,0,83,84" origin="0.5,0.5" />
+    <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
+    <Wearable slots="OuterClothes" msg="ItemMsgPickUpSelect">
+    <sprite name="Heavy Gear Torso" texture="%ModDir%/Vest/boarmor2.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+    <sprite name="Heavy Gear Right Hand" texture="%ModDir%/Vest/boarmor2.png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+    <sprite name="Heavy Gear Left Hand" texture="%ModDir%/Vest/boarmor2.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+    <sprite name="Heavy Gear Right Upper Arm" texture="%ModDir%/Vest/boarmor2.png" limb="RightForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+    <sprite name="Heavy Gear Left Upper Arm" texture="%ModDir%/Vest/boarmor2.png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+    <sprite name="Heavy Gear Waist" texture="%ModDir%/Vest/boarmor2.png" limb="Waist" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+    <sprite name="Heavy Gear Right Leg" texture="%ModDir%/Vest/boarmor2.png" limb="RightLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+    <sprite name="Heavy Gear Left Leg" texture="%ModDir%/Vest/boarmor2.png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+    <StatusEffect type="OnWearing" target="Character" setvalue="true" disabledeltatime="true" PressureProtection="3000.0"></StatusEffect>
+    <SkillModifier skillidentifier="medical" skillvalue="10" />
+    <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="scp_presolatexinfection,scp_ae035damage" damagemultiplier="0.05" />
+    <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="scp_hexgasdamage,scp_psidamage" damagemultiplier="0.10" />
+    <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="burn,acidburn,radiationsickness" damagemultiplier="0.20" />
+    <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.35" />
+    <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound,bleeding,bitewounds,stun" damagemultiplier="0.85" />
+    <StatusEffect tags="cbrnsuit" type="OnWearing" target="Character" duration="1" stackable="false" setvalue="true" />
+    </Wearable>
+    <ItemContainer capacity="6" maxstacksize="2" hideitems="true" containedstateindicatorslot="0" containedspritedepth="0.56" containedstateindicatorstyle="syringe">
+    <Containable items="medical,smallitem" excludeditems="clothing,toolbox,mobilecontainer,rucksack,backpack,waistbelt,vest,backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,oxy-gen. backpack,xeno-backpack,techno-backpack" />
+    </ItemContainer>
+    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="0,0" holdangle="90" handle1="-10,10" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" />
+    </Item>
+    <!--Black-Ops Scout Exo-->
+    <Item name="" identifier="sgt_boarmorleg" category="Equipment" subcategory="Coalition" cargocontaineridentifier="metalcrate" tags="mediumitem,clothing" scale="0.8" impactsoundtag="impact_metal_heavy">
+    <PreferredContainer primary="abandonedarmseccab,wrecharmseccab" amount="1" spawnprobability="0.15" minleveldifficulty="35" />
+    <Price baseprice="1360" displaynonempty="true" minleveldifficulty="60">
+    <Price storeidentifier="merchantoutpost" multiplier="1.25" minamount="0" maxamount="1">
+    <Reputation faction="coalition" min="85" />
+    </Price>
+    <Price storeidentifier="merchantcity" multiplier="1.15" minavailable="0" maxavailable="1">
+    <Reputation faction="coalition" min="85" />
+    </Price>
+    <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
+    <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="2">
+    <Reputation faction="coalition" min="85" />
+    </Price>
+    <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
+    <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="2">
+    <Reputation faction="coalition" min="85" />
+    </Price>
+    </Price>
+    <Deconstruct time="20">
+    <Item identifier="scp_durasteel" />
+    <Item identifier="scp_durasteel" />
+    <Item identifier="fulgurium" />
+    </Deconstruct>
+    <InventoryIcon name="inv" texture="%ModDir%/Vest/boarmor3.png" sourcerect="429,0,83,84" origin="0.5,0.5" />
+    <Sprite name="sprite" texture="%ModDir%/Vest/boarmor3.png" sourcerect="429,0,83,84" depth="0.6" origin="0.5,0.5" />
+    <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
+    <Wearable slots="OuterClothes" msg="ItemMsgPickUpSelect">
+    <sprite name="Heavy Gear Torso" texture="%ModDir%/Vest/boarmor3.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+    <sprite name="Heavy Gear Waist" texture="%ModDir%/Vest/boarmor3.png" limb="Waist" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+    <sprite name="Heavy Gear Right Thigh" texture="%ModDir%/Vest/boarmor3.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+    <sprite name="Heavy Gear Right Leg" texture="%ModDir%/Vest/boarmor3.png" limb="RightLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+    <sprite name="Heavy Gear Left Thigh" texture="%ModDir%/Vest/boarmor3.png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+    <sprite name="Heavy Gear Left Leg" texture="%ModDir%/Vest/boarmor3.png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+    <StatusEffect type="OnWearing" target="Character" SpeedMultiplier="1.2" setvalue="true" disabledeltatime="true"></StatusEffect>
+    <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.2" />
+    <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="stun" damagemultiplier="0.8" />
+    <sound file="%ModDir%/Sounds/exogear.ogg" type="OnWearing" range="250.0" volumeproperty="Speed" volume="0.1" loop="true" frequencymultiplier="3" />
+    <StatValue stattype="FlowResistance" value="0.9" />
+    </Wearable>
+    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="0,0" holdangle="90" handle1="-10,10" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" />
+    </Item>
+    <!--Black-Ops Sapper Rigging-->
+    <Item name="" identifier="sgt_boarmorsap" category="Equipment" subcategory="Coalition" cargocontaineridentifier="metalcrate" tags="mediumitem,clothing" scale="0.4" impactsoundtag="impact_metal_heavy">
+    <PreferredContainer primary="abandonedarmseccab,wrecharmseccab" amount="1" spawnprobability="0.15" minleveldifficulty="45" />
+    <Price baseprice="1100" displaynonempty="true" minleveldifficulty="60">
+    <Price storeidentifier="merchantoutpost" multiplier="1.25" minamount="0" maxamount="1">
+    <Reputation faction="coalition" min="85" />
+    </Price>
+    <Price storeidentifier="merchantcity" multiplier="1.15" minavailable="0" maxavailable="1">
+    <Reputation faction="coalition" min="85" />
+    </Price>
+    <Price storeidentifier="merchantresearch" sold="false" multiplier="1.25" />
+    <Price storeidentifier="merchantmilitary" multiplier="0.95" minavailable="0" maxavailable="2">
+    <Reputation faction="coalition" min="85" />
+    </Price>
+    <Price storeidentifier="merchantmine" sold="false" multiplier="1.25" />
+    <Price storeidentifier="merchantarmory" multiplier="0.95" minavailable="0" maxavailable="2">
+    <Reputation faction="coalition" min="85" />
+    </Price>
+    </Price>
+    <Deconstruct time="20">
+    <Item identifier="scp_durasteel" />
+    <Item identifier="scp_durasteel" />
+    <Item identifier="titaniumaluminiumalloy" />
+    </Deconstruct>
+    <InventoryIcon name="inv" texture="%ModDir%/Vest/boarmor4.png" sourcerect="429,0,83,84" origin="0.5,0.5" />
+    <Sprite name="sprite" texture="%ModDir%/Vest/boarmor4.png" sourcerect="429,0,83,84" depth="0.6" origin="0.5,0.5" />
+    <Body width="100" height="50" density="15" friction="0.8" restitution="0.01" />
+    <Wearable slots="OuterClothes" msg="ItemMsgPickUpSelect">
+    <sprite name="Heavy Gear Torso" texture="%ModDir%/Vest/boarmor4.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5">
+    <LightComponent range="200.0" lightcolor="250,224,165,255" powerconsumption="10" IsOn="true" allowingameediting="false">
+    <Upgrade gameversion="0.1300.0.3" allowingameediting="false" />
+    <StatusEffect type="OnWearing" target="This,Character" Voltage="1.0" Interval="0.1" setvalue="true">
+    <Conditional IsDead="false" />
+    </StatusEffect>
+    <LightTexture texture="Content/Lights/divinghelmetlight.png" origin="0.07, 0.425" size="1.0,1.0" />
+    </LightComponent>
+    </sprite>
+    <sprite name="Heavy Gear Right Upper Arm" texture="%ModDir%/Vest/boarmor4.png" limb="RightArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" inheritlimbdepth="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+    <sprite name="Heavy Gear Right Lower Arm" texture="%ModDir%/Vest/boarmor4.png" limb="RightForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+    <sprite name="Heavy Gear Right Thigh" texture="%ModDir%/Vest/boarmor4.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+    <sprite name="Heavy Gear Left Thigh" texture="%ModDir%/Vest/boarmor4.png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+    <sprite name="Heavy Gear Right Leg" texture="%ModDir%/Vest/boarmor4.png" limb="RightLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+    <sprite name="Heavy Gear Left Leg" texture="%ModDir%/Vest/boarmor4.png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,0,0" origin="0.5,0.5" />
+    <sprite name="Heavy Gear Left Shoe" texture="%ModDir%/Vest/boarmor4.png" limb="LeftFoot" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+    <sprite name="Heavy Gear Right Shoe" texture="%ModDir%/Vest/boarmor4.png" limb="RightFoot" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+    <SkillModifier skillidentifier="electrical" skillvalue="15" />
+    <SkillModifier skillidentifier="mechanical" skillvalue="15" />
+    <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="explosiondamage,burn" damagemultiplier="0.45" />
+    <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bleeding,gunshotwound,blunttrauma,lacerations" damagemultiplier="0.8" />
+    <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="bitewounds,stun" damagemultiplier="0.85" />
+    <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.90" />
+    </Wearable>
+    <StatusHUD>
+    <!-- Enable scanner if it is currently on -->
+    <StatusEffect type="OnWearing" target="This,Character" drawhudwhenequipped="true" overlaycolor="0,20,0,50" debugwiring="true" showtexts="false" setvalue="true">
+    <Conditional IsOn="true" />
+    </StatusEffect>
+    <!-- Disable scanner if it is currently off-->
+    <StatusEffect type="Always" target="This,Character" drawhudwhenequipped="true" overlaycolor="0,20,0,50" debugwiring="false" showtexts="false" setvalue="true">
+    <Conditional IsOn="false" />
+    </StatusEffect>
+    </StatusHUD>
+    <CustomInterface canbeselected="false" drawhudwhenequipped="true" allowuioverlap="true">
+    <GuiFrame relativesize="0.09,0.07" anchor="BottomCenter" pivot="BottomRight" relativeoffset="-0.025,0.093" style="ItemUI" />
+    <TickBox text="Suit Power">
+    <StatusEffect type="OnUse" targettype="This" IsOn="true" />
+    <StatusEffect type="OnSecondaryUse" targettype="This" IsOn="false" />
+    </TickBox>
+    </CustomInterface>
+    <ItemContainer capacity="3" maxstacksize="4" hideitems="true" containedstateindicatorslot="0" containedspritedepth="0.56">
+    <Containable items="smallitem" excludeditems="clothing,toolbox,mobilecontainer,rucksack,backpack,waistbelt,vest,backpack1,medicalbackpack,power-backpack,duffelbag,heavybackpack,oxy-gen. backpack,xeno-backpack,techno-backpack" />
+    </ItemContainer>
+    <Holdable slots="RightHand,LeftHand" controlpose="true" holdpos="0,0" holdangle="90" handle1="-10,10" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" />
+    </Item>
+    <!--Exogear-->
+    <Item name="" identifier="sgt_exogear" category="Equipment" subcategory="Coalition" tags="mediumitem" scale="0.5" fireproof="true" description="" isshootable="true" allowdroppingonswapwith="diving" impactsoundtag="impact_metal_heavy">
+    <Price baseprice="800" canbespecial="false" sold="false" />
+    <Deconstruct time="30">
+    <Item identifier="safetyharness" />
+    <Item identifier="scp_durasteel" />
+    <Item identifier="scp_durasteel" />
+    <Item identifier="rubber" />
+    <Item identifier="rubber" />
+    </Deconstruct>
+    <Fabricate suitablefabricators="fabricator" requiredtime="60">
+    <RequiredSkill identifier="mechanical" level="60" />
+    <RequiredItem identifier="safetyharness" />
+    <RequiredItem identifier="scp_durasteel" amount="3" />
+    <RequiredItem identifier="rubber" amount="2" />
+    <RequiredItem identifier="alienpowercell" />
+    </Fabricate>
+    <InventoryIcon texture="%ModDir%/Vest/coalexogear.png" sourcerect="411,0,101,146" origin="0.5,0.5" />
+    <Sprite name="Exosuit Item" texture="%ModDir%/Vest/coalexogear.png" sourcerect="411,0,101,146" depth="0.55" origin="0.5,0.5" />
+    <Body width="80" height="160" density="30" />
+    <Wearable slots="OuterClothes+Bag" msg="ItemMsgEquipSelect" displaycontainedstatus="true" canbeselected="false" canbepicked="true" pickkey="Select" allowusewhenworn="true">
+    <sprite name="Exogear Torso" texture="coalexogear.png" limb="Torso" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+    <sprite name="Exogear Right Hand" texture="coalexogear.png" limb="RightHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+    <sprite name="Exogear Left Hand" texture="coalexogear.png" limb="LeftHand" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+    <sprite name="Exogear Right Lower Arm" texture="coalexogear.png" limb="RightArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+    <sprite name="Exogear Left Lower Arm" texture="coalexogear.png" limb="LeftArm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+    <sprite name="Exogear Right Upper Arm" texture="coalexogear.png" limb="RightForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+    <sprite name="Exogear Left Upper Arm" texture="coalexogear.png" limb="LeftForearm" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+    <sprite name="Exogear Waist" texture="coalexogear.png" limb="Waist" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+    <sprite name="Exogear Right Thigh" texture="coalexogear.png" limb="RightThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+    <sprite name="Exogear Left Thigh" texture="coalexogear.png" limb="LeftThigh" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+    <sprite name="Exogear Right Leg" texture="coalexogear.png" limb="RightLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+    <sprite name="Exogear Left Leg" texture="coalexogear.png" limb="LeftLeg" hidelimb="false" inherittexturescale="true" inheritorigin="true" inheritsourcerect="true" sourcerect="0,0,683,264" origin="0.5,0.5" />
+    <StatusEffect type="OnWearing" target="Character" HideFace="false" ObstructVision="false" PressureProtection="2000.0" SpeedMultiplier="0.7" PropulsionSpeedMultiplier="0.8" setvalue="true" disabledeltatime="true"></StatusEffect>
+    <!-- no HMG stun -->
+    <StatusEffect type="OnWearing" target="Character" interval="0.9" disabledeltatime="true">
+    <Affliction identifier="recoilstabilized" amount="1" />
+    </StatusEffect>
+    <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="blunttrauma" damagemultiplier="0.15" damagesound="LimbArmor" deflectprojectiles="true" />
+    <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="gunshotwound,bitewounds,lacerations,bleeding" damagemultiplier="0.45" damagesound="LimbArmor" deflectprojectiles="true" />
+    <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="stun" damagemultiplier="0.5" damagesound="LimbArmor" deflectprojectiles="true" />
+    <damagemodifier armorsector="0.0,360.0" afflictionidentifiers="radiationsickness" damagemultiplier="0.75" damagesound="LimbArmor" />
+    <sound file="%ModDir%/Sounds/exogear.ogg" type="OnWearing" range="500.0" volumeproperty="Speed" volume="0.2" loop="true" frequencymultiplier="0.8" />
+    <StatValue stattype="FlowResistance" value="0.9" />
+    </Wearable>
+    <Holdable slots="RightHand+LeftHand" controlpose="true" holdpos="20,-80" handle1="-10,0" handle2="10,0" msg="ItemMsgPickUpUse" canbeselected="false" canbepicked="true" pickkey="Use" />
+    <ItemContainer capacity="0" hideitems="true">
+    <SlotIcon slotindex="0" texture="Content/UI/MainIconsAtlas.png" sourcerect="660,390,224,105" origin="0.5,0.5" />
+    <SubContainer capacity="1" maxstacksize="1">
+    <Containable items="largeitem,mediumitem,crate,railgunammo,ammobox,deepdiving,operatingtable" />
+    </SubContainer>
+    <SubContainer capacity="2">
+    <Containable items="smallitem" />
+    </SubContainer>
+    </ItemContainer>
+    <aitarget maxsightrange="1500" />
+    </Item>
+</override>
